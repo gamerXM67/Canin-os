@@ -1,21 +1,163 @@
 <template>
-    <section id="toutTarifs">
-        <section id="cherif">
-            <p>tres chere tarifs</p>
-            <h1>Attention Personnalisée pour Chaque Animal</h1>
+    <section id="Tarifs">
+        <section class="header">
+            <p>Tarifs</p>
+            <h1>Nos forfaits de toilettage</h1>
         </section>
-        <section id="tableau">
-            <div>chats</div>
-            <div>TRÈS PETIT GABARIT [< 6 KGS]</div>
-                    <div>PETIT GABARIT [< 15 KGS]</div>
-                            <div>GABARIT MOYEN [< 25 KGS]</div>
-                                    <div>GRAND GABARIT [< 40 KGS]</div>
-                                            <div>TRÈS GRAND GABARIT [> 40 KGS]</div>
+
+        <section class="tableau">
+            <article class="card">
+                <div class="card-top">
+                    <img src="../src/assets/doge.webp" alt="Toilettage chats" />
+                </div>
+                <div class="card-bottom">
+                    <h2>Chats</h2>
+                    <p>Tarifs sur demande</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-top">
+                    <img src="../src/assets/doge.webp" alt="Très petit gabarit" />
+                </div>
+                <div class="card-bottom">
+                    <h2>Très petit gabarit</h2>
+                    <p>&lt; 6 kg</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-top">
+                    <img src="../src/assets/doge.webp" alt="Petit gabarit" />
+                </div>
+                <div class="card-bottom">
+                    <h2>Petit gabarit</h2>
+                    <p>&lt; 15 kg</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-top">
+                    <img src="../src/assets/doge.webp" alt="Gabarit moyen" />
+                </div>
+                <div class="card-bottom">
+                    <h2>Gabarit moyen</h2>
+                    <p>&lt; 25 kg</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-top">
+                    <img src="../src/assets/doge.webp" alt="Grand gabarit" />
+                </div>
+                <div class="card-bottom">
+                    <h2>Grand gabarit</h2>
+                    <p>&lt; 40 kg</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-top">
+                    <img src="../src/assets/doge.webp" alt="Très grand gabarit" />
+                </div>
+                <div class="card-bottom">
+                    <h2>Très grand gabarit</h2>
+                    <p>&gt; 40 kg</p>
+                </div>
+            </article>
         </section>
     </section>
 </template>
 <style scoped>
-#toutTarifs {
-    background-color: #03A9F4;
+#Tarifs {
+    background: #03a9f4;
+    padding: 60px 16px 80px;
+}
+
+.header {
+    max-width: 960px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.header p {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.header h1 {
+    margin: 12px 0 0;
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+
+.tableau {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+}
+
+.card-top {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-bottom {
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+@media (max-width: 860px) {
+    .tableau {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .tableau {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
