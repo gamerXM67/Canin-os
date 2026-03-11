@@ -1,5 +1,5 @@
 <template>
-    <section id="jarvis">
+    <section id="Services">
         <p>Services</p>
         <h1>Des Services de Toilettage et de Bien-Être pour Vos Compagnons</h1>
         <p>Offrez à vos animaux de compagnie une expérience de toilettage et de bien-être inégalée. Clara propose des
@@ -8,7 +8,7 @@
             moment de détente, nous mettons tout en œuvre pour que votre compagnon soit entre de bonnes mains.
         </p>
     </section>
-    <section class="JarvisSpec">
+    <section class="ServicesSpec">
         <img id="one" src="../src/assets/doge.webp" alt="doge 1"></img>
         <img id="two" src="../src/assets/doge.webp" alt="doge 2"></img>
         <img id="three" src="../src/assets/doge.webp" alt="doge 3"></img>
@@ -31,12 +31,12 @@
     </section>
 </template>
 <style scoped>
-#jarvis {
+#Services {
     background-color: #4651cbf0;
     text-align: center;
 }
 
-.JarvisSpec {
+.ServicesSpec {
     background-color: #818cd9;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -46,7 +46,7 @@
     padding: 20px;
 }
 
-.JarvisSpec img {
+.ServicesSpec img {
     width: 100%;
     height: auto;
     object-fit: cover;

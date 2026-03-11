@@ -4,8 +4,7 @@
 
     <body>
 
-
-        <main>
+        <main id="Index">
             <section id="hero">
                 <h1>Bienvenue au salon de toilettage Pattes à l'eau</h1>
                 <p>Prendre soin de vos animaux avec compétence et professionnalisme</p>
@@ -18,7 +17,6 @@
             </section>
 
         </main>
-
 
     </body>
 </template>

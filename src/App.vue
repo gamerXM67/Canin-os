@@ -30,4 +30,8 @@ import { ref } from 'vue'
   </footer>
 </template>
 
-<style></style>
+<style>
+main {
+  scroll-behavior: smooth;
+}
+</style>
