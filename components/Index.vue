@@ -10,10 +10,10 @@
                 <p>Prendre soin de vos animaux avec compétence et professionnalisme</p>
                 <p>Au salon de toilettage Pattes à l'eau, nous offrons des soins complets et attentionnés pour vos
                     animaux. Nous veillons à leur bien-être en leur apportant un toilettage de qualité. </p>
-                <div class="bouttonEntrer">
+                <nav class="bouttonEntrer" aria-label="Actions">
                     <a class="btn btnSaPlus" href="#Presentation">Savoir plus</a>
                     <a class="btn btnContact" href="#Contact">Contact</a>
-                </div>
+                </nav>
             </section>
 
         </main>

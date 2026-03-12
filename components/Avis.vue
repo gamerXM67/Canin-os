@@ -2,7 +2,7 @@
     <section id="Avis">
         <p>Avis</p>
         <h1>Voir les avis de nos clients</h1>
-        <div>IMPLEMENTER AVIS GOOGLE ICI</div>
+        <p>IMPLEMENTER AVIS GOOGLE ICI</p>
     </section>
 </template>
 <style scoped>

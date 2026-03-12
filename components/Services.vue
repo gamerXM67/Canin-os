@@ -12,22 +12,22 @@
         <img id="one" src="../src/assets/doge.webp" alt="doge 1"></img>
         <img id="two" src="../src/assets/doge.webp" alt="doge 2"></img>
         <img id="three" src="../src/assets/doge.webp" alt="doge 3"></img>
-        <div class="InstaConfort">
-            <div id="four">Installations Confortables</div>
+        <article class="InstaConfort">
+            <h2 id="four">Installations Confortables</h2>
             <p>Un espace calme et accueillant, conçu pour le bien-être de votre animal et pour réduire le stress pendant
                 les soins.</p>
-        </div>
-        <div class="SoinToiProff">
-            <div id="five">Soins de Toilettage Professionnels</div>
+        </article>
+        <article class="SoinToiProff">
+            <h2 id="five">Soins de Toilettage Professionnels</h2>
             <p>Des soins complets et personnalisés adaptés aux besoins de chaque race, réalisés avec des produits de
                 qualité.</p>
-        </div>
+        </article>
 
-        <div class="AttentionPersonnalisee">
-            <div id="six">Attention Personnalisée pour Chaque Animal</div>
+        <article class="AttentionPersonnalisee">
+            <h2 id="six">Attention Personnalisée pour Chaque Animal</h2>
             <p>Chaque animal est unique et mérite une attention particulière. Clara prend le temps de s'adapter aux
                 besoins et aux préférences de votre compagnon.</p>
-        </div>
+        </article>
     </section>
 </template>
 <style scoped>

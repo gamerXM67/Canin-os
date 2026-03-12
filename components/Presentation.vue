@@ -1,6 +1,6 @@
 <template>
-    <sections id="Presentation">
-        <div class="grid">
+    <section id="Presentation">
+        <section class="grid">
             <img id=ludosins src="../src/assets/ludosins.webp" alt="Ludovic">
             <section id="Apropos">
                 <h1>Rencontrez Ludovic, votre toiletteur dédié</h1>
@@ -21,8 +21,8 @@
                     environnement calme et attentionné, en veillant à chaque détail pour leur confort et leur beauté.
                 </p>
             </section>
-        </div>
-    </sections>
+        </section>
+    </section>
 </template>
 <style scoped>
 .grid {

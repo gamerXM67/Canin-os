@@ -57,17 +57,17 @@ function toggle(index: number) {
         <h1>Questions Fréquemment Posées</h1>
 
         <section v-for="(item, index) in faqs" :key="index" class="Faq-item">
-            <div class="faq-header" :class="{ 'is-active': openIndex === index }" @click="toggle(index)">
+            <button class="faq-header" :class="{ 'is-active': openIndex === index }" type="button" @click="toggle(index)">
                 <span class="question">{{ item.question }}</span>
 
                 <span class="icon" :class="{ rotate: openIndex === index }">
                     <i class="fas fa-chevron-down"></i>
                 </span>
-            </div>
+            </button>
 
-            <div v-if="openIndex === index" class="faq-content">
+            <section v-if="openIndex === index" class="faq-content">
                 <p>{{ item.answer }}</p>
-            </div>
+            </section>
         </section>
     </section>
 </template>
@@ -99,6 +99,10 @@ function toggle(index: number) {
     color: #003366;
     background-color: #d4a3a3;
     /* Bleu foncé comme sur ton image */
+    border: none;
+    width: 100%;
+    text-align: left;
+    appearance: none;
     border-left: 5px solid transparent;
     /* Prêt pour l'état actif */
 }

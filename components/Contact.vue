@@ -1,38 +1,38 @@
 <template>
     <section id="Contact">
         <section id="contact-info">
-            <div class="info-card">
-                <div class="icon">📍</div>
-                <div class="content">
+            <article class="info-card">
+                <span class="icon">📍</span>
+                <section class="content">
                     <h3>Localisation</h3>
                     <p>127 Bis Avenue des Canards Enrhumés, 67420<br>Niederschaeffolsheim</p>
-                </div>
-            </div>
-            <div class="info-card">
-                <div class="icon">📞</div>
-                <div class="content">
+                </section>
+            </article>
+            <article class="info-card">
+                <span class="icon">📞</span>
+                <section class="content">
                     <h3>Téléphone</h3>
                     <p>06 74 20 48 69</p>
-                </div>
-            </div>
-            <div class="info-card">
-                <div class="icon">✉️</div>
-                <div class="content">
+                </section>
+            </article>
+            <article class="info-card">
+                <span class="icon">✉️</span>
+                <section class="content">
                     <h3>Email</h3>
                     <p>ce.compte.epic@gmail.com</p>
-                </div>
-            </div>
+                </section>
+            </article>
         </section>
         <p>ça contact ici</p>
         <h1>Contactez-moi</h1>
         <h4>Vous avez des questions ou des préoccupations ? N'hésitez pas à me contacter.</h4>
         <section id="formulaire">
-            <input placeholder="votre nom" type="text">
-            <input placeholder="votre prénom" type="text">
-            <input placeholder="Email" type="email">
-            <input placeholder="Numero de téléphone" type="tel" inputmode="numeric">
-            <textarea placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
+            <input id="nom" placeholder="votre nom" type="text">
+            <input id="prenom" placeholder="votre prénom" type="text">
+            <input id="email" placeholder="Email" type="email" autocomplete="email">
+            <input id="telephone" placeholder="Numero de téléphone" type="tel" inputmode="numeric">
+            <textarea id="message" placeholder="Votre message"></textarea>
+            <button id="envoie" type="submit">Envoyer</button>
         </section>
     </section>
 </template>
@@ -42,25 +42,38 @@
 }
 
 #contact-info {
-    display: flex;
-    justify-content: space-around;
-    gap: 16px;
-    flex-wrap: wrap;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 18px;
+    padding: 24px 0;
+
+    /* align like on the screenshot */
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .info-card {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 16px 18px;
-    min-width: 220px;
-    max-width: 300px;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    gap: 14px;
+    padding: 18px 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
     color: #1c242e;
 }
+
+@media (max-width: 880px) {
+    #contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+}
+
 
 .info-card .icon {
     display: grid;
@@ -83,5 +96,29 @@
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.3;
+}
+
+#formulaire {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 12px;
+    max-width: 480px;
+    margin: 24px auto;
+}
+
+#message {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+#envoie {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 </style>

@@ -7,63 +7,63 @@
 
         <section class="tableau">
             <article class="card">
-                <div class="card-top">
+                <header class="card-top">
                     <img src="../src/assets/doge.webp" alt="Toilettage chats" />
-                </div>
-                <div class="card-bottom">
+                </header>
+                <footer class="card-bottom">
                     <h2>Chats</h2>
                     <p>Tarifs sur demande</p>
-                </div>
+                </footer>
             </article>
 
             <article class="card">
-                <div class="card-top">
+                <header class="card-top">
                     <img src="../src/assets/doge.webp" alt="Très petit gabarit" />
-                </div>
-                <div class="card-bottom">
+                </header>
+                <footer class="card-bottom">
                     <h2>Très petit gabarit</h2>
                     <p>&lt; 6 kg</p>
-                </div>
+                </footer>
             </article>
 
             <article class="card">
-                <div class="card-top">
+                <header class="card-top">
                     <img src="../src/assets/doge.webp" alt="Petit gabarit" />
-                </div>
-                <div class="card-bottom">
+                </header>
+                <footer class="card-bottom">
                     <h2>Petit gabarit</h2>
                     <p>&lt; 15 kg</p>
-                </div>
+                </footer>
             </article>
 
             <article class="card">
-                <div class="card-top">
+                <header class="card-top">
                     <img src="../src/assets/doge.webp" alt="Gabarit moyen" />
-                </div>
-                <div class="card-bottom">
+                </header>
+                <footer class="card-bottom">
                     <h2>Gabarit moyen</h2>
                     <p>&lt; 25 kg</p>
-                </div>
+                </footer>
             </article>
 
             <article class="card">
-                <div class="card-top">
+                <header class="card-top">
                     <img src="../src/assets/doge.webp" alt="Grand gabarit" />
-                </div>
-                <div class="card-bottom">
+                </header>
+                <footer class="card-bottom">
                     <h2>Grand gabarit</h2>
                     <p>&lt; 40 kg</p>
-                </div>
+                </footer>
             </article>
 
             <article class="card">
-                <div class="card-top">
+                <header class="card-top">
                     <img src="../src/assets/doge.webp" alt="Très grand gabarit" />
-                </div>
-                <div class="card-bottom">
+                </header>
+                <footer class="card-bottom">
                     <h2>Très grand gabarit</h2>
                     <p>&gt; 40 kg</p>
-                </div>
+                </footer>
             </article>
         </section>
     </section>

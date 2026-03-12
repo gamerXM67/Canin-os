@@ -9,7 +9,7 @@
         <a href="#Avis">Avis</a>
         <a href="#Faq">faq</a>
         <a href="#Contact" class="btn-rdv">Prendre RDV</a>
-        <div class="socials">
+        <section class="socials" aria-label="Réseaux sociaux">
             <a class="social-item" href="https://www.facebook.com/" target="_blank">
                 <img src="../src/assets/facebook.webp" alt="Facebook">
             </a>
@@ -22,7 +22,7 @@
             <a class="social-item" href="https://www.youtube.com/" target="_blank">
                 <img src="../src/assets/youtube.webp" alt="Youtube">
             </a>
-        </div>
+        </section>
     </nav>
 </template>
 <style scoped>
