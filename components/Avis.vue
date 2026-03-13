@@ -7,6 +7,6 @@
 </template>
 <style scoped>
 #Avis {
-    background-color: #aea6a6
+    /* background-color: #aea6a6 */
 }
 </style>

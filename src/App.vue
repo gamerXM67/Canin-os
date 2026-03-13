@@ -21,7 +21,7 @@ import { ref } from 'vue'
     <Services />
     <Tarifs />
     <Galerie />
-    <Avis />
+    <!-- <Avis /> -->
     <Faq />
     <Contact />
   </main>
@@ -31,7 +31,15 @@ import { ref } from 'vue'
 </template>
 
 <style>
-main {
+html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(224, 238, 255, 1) 100%);
+  font-family: 'Nunito', sans-serif;
 }
 </style>

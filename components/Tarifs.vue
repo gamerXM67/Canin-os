@@ -1,163 +1,182 @@
 <template>
     <section id="Tarifs">
-        <section class="header">
-            <p>Tarifs</p>
-            <h1>Nos forfaits de toilettage</h1>
-        </section>
+        <div class="container">
+            <header class="header">
+                <span class="badge">Tarifs</span>
+                <h1>Nos forfaits de toilettage</h1>
+            </header>
 
-        <section class="tableau">
-            <article class="card">
-                <header class="card-top">
-                    <img src="../src/assets/doge.webp" alt="Toilettage chats" />
-                </header>
-                <footer class="card-bottom">
-                    <h2>Chats</h2>
-                    <p>Tarifs sur demande</p>
-                </footer>
-            </article>
+            <div class="tableau">
+                <article class="card">
+                    <figure class="card-top">
+                        <img src="../src/assets/dogeChat.webp" alt="Toilettage pour chats" />
+                    </figure>
+                    <footer class="card-bottom">
+                        <h2>Chats</h2>
+                        <p class="price-info">Tarifs sur demande</p>
+                    </footer>
+                </article>
 
-            <article class="card">
-                <header class="card-top">
-                    <img src="../src/assets/doge.webp" alt="Très petit gabarit" />
-                </header>
-                <footer class="card-bottom">
-                    <h2>Très petit gabarit</h2>
-                    <p>&lt; 6 kg</p>
-                </footer>
-            </article>
+                <article class="card">
+                    <figure class="card-top">
+                        <img src="../src/assets/dogeTresPetit.webp" alt="Chien de très petit gabarit" />
+                    </figure>
+                    <footer class="card-bottom">
+                        <h2>Très petit gabarit</h2>
+                        <p class="weight-info">&lt; 6 kg</p>
+                    </footer>
+                </article>
 
-            <article class="card">
-                <header class="card-top">
-                    <img src="../src/assets/doge.webp" alt="Petit gabarit" />
-                </header>
-                <footer class="card-bottom">
-                    <h2>Petit gabarit</h2>
-                    <p>&lt; 15 kg</p>
-                </footer>
-            </article>
+                <article class="card">
+                    <figure class="card-top">
+                        <img src="../src/assets/dogePetit.webp" alt="Chien de petit gabarit" />
+                    </figure>
+                    <footer class="card-bottom">
+                        <h2>Petit gabarit</h2>
+                        <p class="weight-info">&lt; 15 kg</p>
+                    </footer>
+                </article>
 
-            <article class="card">
-                <header class="card-top">
-                    <img src="../src/assets/doge.webp" alt="Gabarit moyen" />
-                </header>
-                <footer class="card-bottom">
-                    <h2>Gabarit moyen</h2>
-                    <p>&lt; 25 kg</p>
-                </footer>
-            </article>
+                <article class="card">
+                    <figure class="card-top">
+                        <img src="../src/assets/dogeMoyen.webp" alt="Chien de gabarit moyen" />
+                    </figure>
+                    <footer class="card-bottom">
+                        <h2>Gabarit moyen</h2>
+                        <p class="weight-info">&lt; 25 kg</p>
+                    </footer>
+                </article>
 
-            <article class="card">
-                <header class="card-top">
-                    <img src="../src/assets/doge.webp" alt="Grand gabarit" />
-                </header>
-                <footer class="card-bottom">
-                    <h2>Grand gabarit</h2>
-                    <p>&lt; 40 kg</p>
-                </footer>
-            </article>
+                <article class="card">
+                    <figure class="card-top">
+                        <img src="../src/assets/dogeGrand.webp" alt="Chien de grand gabarit" />
+                    </figure>
+                    <footer class="card-bottom">
+                        <h2>Grand gabarit</h2>
+                        <p class="weight-info">&lt; 40 kg</p>
+                    </footer>
+                </article>
 
-            <article class="card">
-                <header class="card-top">
-                    <img src="../src/assets/doge.webp" alt="Très grand gabarit" />
-                </header>
-                <footer class="card-bottom">
-                    <h2>Très grand gabarit</h2>
-                    <p>&gt; 40 kg</p>
-                </footer>
-            </article>
-        </section>
+                <article class="card">
+                    <figure class="card-top">
+                        <img src="../src/assets/dogeTresGrand.webp" alt="Chien de très grand gabarit" />
+                    </figure>
+                    <footer class="card-bottom">
+                        <h2>Très grand gabarit</h2>
+                        <p class="weight-info">&gt; 40 kg</p>
+                    </footer>
+                </article>
+            </div>
+        </div>
     </section>
 </template>
+
 <style scoped>
 #Tarifs {
-    background: #03a9f4;
-    padding: 60px 16px 80px;
+    padding: 100px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .header {
-    max-width: 960px;
-    margin: 0 auto 40px;
     text-align: center;
-    color: #fff;
+    margin-bottom: 60px;
 }
 
-.header p {
-    margin: 0;
-    font-size: 0.9rem;
-    letter-spacing: 0.08em;
+.badge {
+    display: inline-block;
+    background-color: #dc8c82;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
     text-transform: uppercase;
-    opacity: 0.9;
+    margin-bottom: 15px;
 }
 
 .header h1 {
-    margin: 12px 0 0;
-    font-size: 2.2rem;
-    line-height: 1.1;
+    font-size: 2.4rem;
+    color: #2c3e50;
+    margin-top: 10px;
 }
 
 .tableau {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
-    gap: 20px;
-    max-width: 960px;
-    margin: 0 auto;
+    gap: 30px;
 }
 
 .card {
-    background: #fff;
-    border-radius: 14px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     overflow: hidden;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    min-height: 260px;
+}
+
+.card:hover {
+    /* Effet d'élévation au survol */
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .card-top {
     width: 100%;
     aspect-ratio: 16 / 9;
-    overflow: hidden;
+    margin: 0;
 }
 
 .card-top img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .card-bottom {
-    padding: 18px 16px;
+    padding: 25px 20px;
+    text-align: center;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    gap: 6px;
 }
 
 .card h2 {
-    margin: 0;
-    font-size: 1.1rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    font-weight: 700;
 }
 
-.card p {
+.price-info,
+.weight-info {
     margin: 0;
-    font-size: 0.95rem;
-    color: #333;
+    font-size: 1rem;
+    color: #dc8c82;
+    font-weight: 600;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
     .tableau {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
     .tableau {
         grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.8rem;
     }
 }
 </style>
