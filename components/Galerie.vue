@@ -100,7 +100,6 @@ h1 {
     object-fit: cover;
     border-radius: 24px;
     /* Plus arrondi pour la douceur */
-    /* ON NE TOUCHE PAS À L'OMBRE SELON TA DEMANDE */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
